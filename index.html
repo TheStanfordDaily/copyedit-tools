@@ -19,7 +19,8 @@ $(function() {
       if(this.nodeType === Node.COMMENT_NODE) {
           $(this).remove();
       }
-		});
+    });
+    $temp.find("br").remove();
 
     var output = $temp.html();
     
